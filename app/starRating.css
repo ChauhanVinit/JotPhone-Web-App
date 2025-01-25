@@ -1,0 +1,35 @@
+.icon {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1
+}
+
+.star:before {
+    content: ""
+}
+
+@font-face {
+    font-family: "star";
+    font-style: normal;
+    font-weight: 900;
+    src: url(../public/font/solidStar.woff2) format("woff2");
+    font-display: block
+}
+
+.icon {
+    font-family: "star";
+    font-weight: 900
+}
+
+.s-rate {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    background-size: 100%;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent
+}
